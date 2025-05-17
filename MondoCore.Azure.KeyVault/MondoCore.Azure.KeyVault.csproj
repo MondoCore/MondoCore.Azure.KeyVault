@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Jim Lightfoot</Authors>
+    <Company>MondoCore</Company>
+    <Description>Implementation of IBlobStore, IConfigration interfaces for Azure Key Vault</Description>
+    <Copyright>© Jim Lightfoot, All Rights Reserved</Copyright>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <RepositoryUrl>https://github.com/MondoCore/MondoCore.Azure.KeyVault</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <Version>2.1.0</Version>
+    <Title>$(AssemblyName)</Title>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageTags>Azure;Keyvault</PackageTags>
+    <PackageReleaseNotes>Moved to it's own repo. Changed to .Net 8</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Core" Version="1.46.1" />
+    <PackageReference Include="Azure.Identity" Version="1.14.0" />
+    <PackageReference Include="Azure.Security.KeyVault.Keys" Version="4.7.0" />
+    <PackageReference Include="Azure.Security.KeyVault.Secrets" Version="4.7.0" />
+    <PackageReference Include="MondoCore.Common" Version="3.0.0" />
+  </ItemGroup>
+
+</Project>
