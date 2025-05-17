@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/MondoCore.Azure.Keyvault/.vs/MondoCore.Azure.Keyvault/v17
+/MondoCore.Azure.KeyVault/bin
+/MondoCore.Azure.KeyVault/obj
+/MondoCore.Azure.KeyVault.FunctionalTests/bin
+/MondoCore.Azure.KeyVault.FunctionalTests/obj
